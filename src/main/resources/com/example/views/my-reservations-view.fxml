@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.user.controllers.MyReservationsController"
+      spacing="15"
+      styleClass="vbox">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <fx:define>
+        <ToggleGroup fx:id="filterGroup" />
+    </fx:define>
+
+    <Label text="My Reservations" styleClass="label title" />
+
+    <HBox spacing="10">
+        <ToggleButton fx:id="upcomingBtn" text="Upcoming" toggleGroup="$filterGroup" styleClass="toggle-button" selected="true" />
+        <ToggleButton fx:id="pastBtn" text="Past" toggleGroup="$filterGroup" styleClass="toggle-button" />
+        <ToggleButton fx:id="cancelledBtn" text="Cancelled" toggleGroup="$filterGroup" styleClass="toggle-button" />
+    </HBox>
+
+    <TableView fx:id="reservationsTable" prefHeight="400" VBox.vgrow="ALWAYS" styleClass="modern-table">
+        <columns>
+            <TableColumn fx:id="restaurantColumn" text="Restaurant" prefWidth="150"/>
+            <TableColumn fx:id="dateColumn" text="Date" prefWidth="100"/>
+            <TableColumn fx:id="timeColumn" text="Time" prefWidth="100"/>
+            <TableColumn fx:id="guestsColumn" text="Guests" prefWidth="100"/>
+            <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"/>
+            <TableColumn fx:id="actionColumn" text="Action" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="emptyLabel" text="No reservations to display." visible="false"
+           styleClass="label empty-label" />
+
+</VBox>
+

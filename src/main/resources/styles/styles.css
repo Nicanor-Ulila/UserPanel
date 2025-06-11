@@ -1,0 +1,102 @@
+.root {
+    -fx-background-color: white;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #0F172A;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.label.title {
+    -fx-text-fill: #0047ab;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.label.error-label {
+    -fx-text-fill: red;
+}
+
+.label.success-label {
+    -fx-text-fill: green;
+}
+
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #0047ab;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 8 12;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: #0047ab;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+    -fx-padding: 10 15;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #dbeafe;
+    -fx-text-fill: #0F172A;
+}
+
+.button.active {
+    -fx-background-color: #0047ab;
+    -fx-text-fill: white;
+}
+
+.hyperlink {
+    -fx-text-fill: #1E3A8A;
+    -fx-font-weight: normal;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #0F172A;
+    -fx-underline: true;
+}
+
+#errorLabel, #messageLabel {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+#errorLabel {
+    -fx-text-fill: red;
+}
+
+#messageLabel {
+    -fx-text-fill: green;
+}
+
+#mainContent {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-border-color: #e5e7eb;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.vbox {
+    -fx-background-color: #f0f4f8;
+}
+
+.list-view {
+    -fx-border-color: #0047ab;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+    -fx-text-fill: #0F172A;
+}
+

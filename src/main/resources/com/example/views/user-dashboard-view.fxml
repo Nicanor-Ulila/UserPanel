@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.user.controllers.UserDashboardController">
+
+    <!-- Left Sidebar -->
+    <left>
+        <VBox spacing="15" alignment="TOP_LEFT" style="-fx-background-color: #f0f0f0;" prefWidth="200">
+            <padding>
+                <Insets top="20" right="10" bottom="20" left="10"/>
+            </padding>
+
+            <Label text="Dashboard" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+            <Button fx:id="restaurantListBtn" text="Restaurant List" onAction="#showRestaurantList" maxWidth="Infinity"/>
+            <Button fx:id="myReservationsBtn" text="My Reservations" onAction="#showMyReservations" maxWidth="Infinity"/>
+            <Button fx:id="profileBtn" text="Manage Profile" onAction="#showProfile" maxWidth="Infinity"/>
+            <Button fx:id="logoutBtn" text="Log Out" onAction="#handleLogout" maxWidth="Infinity"/>
+        </VBox>
+    </left>
+
+    <!-- Main content area -->
+    <center>
+        <StackPane fx:id="mainContent" style="-fx-padding: 20;" />
+
+    </center>
+
+</BorderPane>

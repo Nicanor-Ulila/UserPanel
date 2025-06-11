@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.user.controllers.ReservationFormController"
+      spacing="15"
+      alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="30" bottom="20" left="30"/>
+    </padding>
+
+    <Label fx:id="restaurantNameLabel"
+           style="-fx-font-size: 18px; -fx-font-weight: bold;"
+           text="Make a Reservation" />
+
+    <DatePicker fx:id="datePicker" promptText="Reservation Date" />
+
+    <TextField fx:id="timeField" promptText="Time (e.g. 7:00 PM)" />
+
+    <Spinner fx:id="guestsSpinner" promptText="Guests" editable="true" />
+
+    <TextArea fx:id="specialRequestField" promptText="Special Requests (optional)" prefRowCount="3" />
+
+    <Button text="Submit Reservation" onAction="#handleSubmitReservation" />
+
+    <Label fx:id="statusLabel" textFill="green" />
+</VBox>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.user.controllers.RestaurantListController"
+      spacing="10"
+      alignment="CENTER"
+      styleClass="vbox">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Use class 'title' to get blue styling -->
+    <Label text="Choose a Restaurant" styleClass="label title" />
+
+    <!-- Optional: you can also style ListView with a class -->
+    <ListView fx:id="restaurantList" prefHeight="300" prefWidth="250" />
+</VBox>
